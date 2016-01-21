@@ -1,23 +1,43 @@
 # kata-yahtzee
-yahtzee game as a coding kata
+Kata sur les base du jeu Yahtzee
 
-## Problem Description
+## Le Yahtzee en quelques mots
 
-The game of yahtzee is a simple dice game. Each round, each player rolls five six sided dice. The player may choose to reroll some or all of the dice up to three times (including the original roll). The player then places the roll at a category, such as ones, twos, sixes, pair, two pairs etc. If the roll is compatible with the score, the player gets a score for this roll according to the rules. If the roll is not compatible, the player gets a score of zero for this roll.
+Le Yahtzee est un simple jeu de dés se déroulant en plusieurs rounds. Il se joue à l’aide de 5 dès comme suit :
 
-The kata consists of creating the rules to score a roll in any of a predefined category. Given a roll and a category, the final solution should output the score for this roll placed in this category.
+A chaque round, chaque joueur lance les dés à leur tour. Le but est de réaliser une figure (5 dés identiques, une paire, un brelan, Yahtzee, ...). Pour réaliser cette figure, il a le droit à trois jets de dés par tour et il est, à chaque jet, libre de les relancer tous ou juste ceux de son choix. Chaque figure réalisée lui rapporte alors des points suivant les règles établies. Il ne peut cependant pas réaliser deux fois la même figure. A la fin de la partie, le gagnant est celui qui totalisée le plus de points.
 
-## Yahtzee rules description and suggested test cases
+## Déscription du problème
 
-The following categories exists:
+Le kata consiste à créer l’ensemble des règles de calcul qui, pour un joueur donné et à partir d’une combinaison de dés et d’une figure, restituera le score associé.
 
-- Ones, Twos, Threes, Fours, Fives, Sixes: The player scores the sum of the dice that reads one, two, three, four, five or six, respectively. For example, 1, 1, 2, 4, 4 placed on "fours" gives 8 points.
-- Pair: The player scores the sum of the two highest matching dice. For example, 3, 3, 3, 4, 4 placed on "pair" gives 8.
-- Two pairs: If there are two pairs of dice with the same number, the player scores the sum of these dice. If not, the player scores 0. For example, 1, 1, 2, 3, 3 placed on "two pairs" gives 8.
-- Three of a kind: If there are three dice with the same number, the player scores the sum of these dice. Otherwise, the player scores 0. For example, 3, 3, 3, 4, 5 places on "three of a kind" gives 9.
-- Four of a kind: If there are four dice with the same number, the player scores the sum of these dice. Otherwise, the player scores 0. For example, 2, 2, 2, 2, 5 places on "four of a kind" gives 8.
-- Small straight: If the dice read 1,2,3,4,5, the player scores 15 (the sum of all the dice), otherwise 0.
-- Large straight: If the dice read 2,3,4,5,6, the player scores 20 (the sum of all the dice), otherwise 0.
-- Full house: If the dice are two of a kind and three of a kind, the player scores the sum of all the dice. For example, 1,1,2,2,2 placed on "full house" gives 8. 4,4,4,4,4 is not "full house".
-- Yahtzee: If all dice are the have the same number, the player scores 50 points, otherwise 0.
-- Chance: The player gets the sum of all dice, no matter what they read.
+Au début de la partie, le programme demandera le nombre de joueur. A chaque tour, il demandera, joueur par joueur, la combinaison et la figure désirée. A la fin de la partie il donnera un classement de chaque joueur avec le score et désignera le vainqueur.
+
+## Règles du jeu :
+
+La feuille de score est divisée en deux parties : partie mineure et partie majeure.
+
+_La partie mineure regroupe les figures suivantes_ :
+
+- **Maximum de 1** : les joueurs doivent obtenir le plus grand nombre de dés avec la face 1. Ils marquent 1 fois le nombre de dés de valeur 1 ;
+- **Maximum de 2** : les joueurs doivent obtenir le plus grand nombre de dés avec la face 2. Ils marquent 2 fois le nombre de dés de valeur 2 ;
+- **Maximum de 3** : les joueurs doivent obtenir le plus grand nombre de dés avec la face 3. Ils marquent 3 fois le nombre de dés de valeur 3 ;
+- **Maximum de 4** : les joueurs doivent obtenir le plus grand nombre de dés avec la face 4. Ils marquent 4 fois le nombre de dés de valeur 4 ;
+- **Maximum de 5** : les joueurs doivent obtenir le plus grand nombre de dés avec la face 5. Ils marquent 5 fois le nombre de dés de valeur 5 ;
+- **Maximum de 6** : les joueurs doivent obtenir le plus grand nombre de dés avec la face 6. Ils marquent 6 fois le nombre de dés de valeur 6 ;
+
+Quand les figures de la partie mineure sont entièrement réalisées, le joueur obtient un bonus de 35 points si le total des points de celles-ci est supérieur à 63 points.
+
+_La partie majeure regroupe les figures suivantes_ :
+
+- **Brelan** : les joueurs doivent obtenir 3 dés de même valeur. Ils marquent 3 fois la valeur des dés identiques ;
+- **Carré** : les joueurs doivent obtenir 4 dés de même valeur. Ils marquent 4 fois la valeur des dés identiques ;
+- **Full** : les joueurs doivent obtenir 3 dés de même valeur et 2 dés d’une autre valeur - (brelan + paire). Ils marquent 25 points ;
+- **Petite Suite** : les joueurs doivent obtenir 4 dés qui se suivent (1-2-3-4, 2-3-4-5, 3-4-5-6). Ils marquent 30 points ;
+- **Grande Suite** : les joueurs doivent obtenir 5 dés qui se suivent (1-2-3-4-5 / 2-3-4-5-6). Ils marquent 40 points ;
+- **Yahtzee** : les joueurs doivent obtenir 5 dés de même valeur. Ils marquent 50 points. 2 Yahtzee sont autorisés au cours d’une partie ;
+- **Chance** : les joueurs doivent obtenir le plus grand nombre de points. Ils marquent la somme de la valeur des dés ;
+
+A la fin de la partie, ont totalise les points de la partie mineure, du bonus associé et de la partie majeure.
+
+Mis à part pour le Yahtzee, chaque figure ne peut être obtenue qu’une seule fois de sorte qu’une partie comptabilise un total de 14 jets par joueur. Le joueur est cependant libre de choisir la figure qu’il désire associer à son jet tant qu’il respecte cette règle.
