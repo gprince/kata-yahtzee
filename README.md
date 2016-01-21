@@ -7,7 +7,7 @@ Le Yahtzee est un simple jeu de dés se déroulant en plusieurs rounds. Il se jo
 
 A chaque round, chaque joueur lance les dés à leur tour. Le but est de réaliser une figure (5 dés identiques, une paire, un brelan, Yahtzee, ...). Pour réaliser cette figure, il a le droit à trois jets de dés par tour et il est, à chaque jet, libre de les relancer tous ou juste ceux de son choix. Chaque figure réalisée lui rapporte alors des points suivant les règles établies. Il ne peut cependant pas réaliser deux fois la même figure. A la fin de la partie, le gagnant est celui qui totalisée le plus de points.
 
-## Déscription du problème
+## Description du problème
 
 Le kata consiste, dans un premier temps,  à créer l’ensemble des règles de calcul qui, pour un joueur donné et à partir d’une combinaison de dés et d’une figure, restituera le score associé.
 
