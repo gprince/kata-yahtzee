@@ -64,7 +64,7 @@ _Deuxième combinaison_ :
 
             4, 3, 2, 4, 5
 
-Les choix possible sont :
+Les choix possibles sont :
 
 - 2 pour la figure mineure "Maximum de 2",
 - 3 pour la figure mineure "Maximum de 3",
@@ -78,7 +78,7 @@ _Troisième combinaison_ :
 
             1, 5, 4, 5, 5
 
-Les choix possible sont :
+Les choix possibles sont :
 
 - 1 pour la figure mineure "Maximum de 1",
 - 4 pour la figure mineure "Maximum de 4",
@@ -91,7 +91,7 @@ _Quatrième combinaison_ :
 
             4, 4, 4, 2, 4
 
-Les choix possible sont :
+Les choix possibles sont :
 
 - 2 pour la figure mineure "Maximum de 2",
 - 16 pour la figure mineure "Maximum de 4",
