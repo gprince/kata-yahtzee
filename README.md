@@ -36,8 +36,88 @@ _La partie majeure regroupe les figures suivantes_ :
 - **Petite Suite** : les joueurs doivent obtenir 4 dés qui se suivent (1-2-3-4, 2-3-4-5, 3-4-5-6). Ils marquent 30 points ;
 - **Grande Suite** : les joueurs doivent obtenir 5 dés qui se suivent (1-2-3-4-5 / 2-3-4-5-6). Ils marquent 40 points ;
 - **Yahtzee** : les joueurs doivent obtenir 5 dés de même valeur. Ils marquent 50 points. 2 Yahtzee sont autorisés au cours d’une partie ;
+- **Prime Yahtzee** : Les joueurs peuvent obtenir 2 Yahtzee au cours d’une partie à condition d’avoir déjà obtenu un premier Yahtzee. Ils marquent 50 points supplémentaires ;
 - **Chance** : les joueurs doivent obtenir le plus grand nombre de points. Ils marquent la somme de la valeur des dés ;
 
 A la fin de la partie, ont totalise les points de la partie mineure, du bonus associé et de la partie majeure.
 
-Mis à part pour le Yahtzee, chaque figure ne peut être obtenue qu’une seule fois de sorte qu’une partie comptabilise un total de 14 jets par joueur. Le joueur est cependant libre de choisir la figure qu’il désire associer à son jet tant qu’il respecte cette règle.
+Mis à part pour le Yahtzee / Prime Yahtzee, chaque figure ne peut être obtenue qu’une seule fois de sorte qu’une partie comptabilise un total de 14 jets maximum par joueur. Le joueur est cependant libre de choisir la figure (sauf "Prime Yahtzee") qu’il désire associer à son jet tant qu’il respecte cette règle. Dans le cas où toutes les figures correspondant à une combinaison de dés ont déjà été choisies, le joueur marquera 0 dans la figure de son choix.
+
+## Exemple pour une partie solo :
+
+_Première combinaison (après trois lancés)_ :
+
+            4, 4, 6, 5, 3.
+
+A partir de cette combinaison, le joueur peut choisir de totaliser :
+
+- 3 pour la figure mineure "Maximum de 3",
+- 8 pour la figure mineure "Maximum de 4",
+- 5 pour la figure mineure "Maximum de 5",
+- 6 pour la figure mineure "Maximum de 6",
+- 30 pour la figure majeure "Petite suite",
+- 22 pour la figure majeure "Chance".
+
+Il choisit "Petite suite" et totalise donc 30 pour cette figure.
+
+_Deuxième combinaison_ :
+
+            4, 3, 2, 4, 5
+
+Les choix possible sont :
+
+- 2 pour la figure mineure "Maximum de 2",
+- 3 pour la figure mineure "Maximum de 3",
+- 8 pour la figure mineure "Maximum de 4",
+- 5 pour la figure mineure "Maximum de 5",
+- 18 pour la figure majeure "Chance".
+
+Il choisit "Chance" et totalise donc 18 pour cette figure.
+
+_Troisième combinaison_ :
+
+            1, 5, 4, 5, 5
+
+Les choix possible sont :
+
+- 1 pour la figure mineure "Maximum de 1",
+- 4 pour la figure mineure "Maximum de 4",
+- 15 pour la figure mineure "Maximum de 5",
+- 15 pour la figure majeure "Brelan".
+
+Il choisit "Maximum de 5" et totalise donc 15 pour cette figure.
+
+_Quatrième combinaison_ :
+
+            4, 4, 4, 2, 4
+
+Les choix possible sont :
+
+- 2 pour la figure mineure "Maximum de 2",
+- 16 pour la figure mineure "Maximum de 4",
+- 12 pour la figure majeure "Brelan",
+- 16 pour la figure majeure "Carré".
+
+Il choisit "Carré " et totalise donc 16 pour cette figure.
+
+La partie se déroule ainsi de suite jusqu’à obtenir la grille de score suivante :
+
+- Maximum de 1: 3
+- Maximum de 2: 8
+- Maximum de 3: 6
+- Maximum de 4: 12
+- Maximum de 5: 15
+- Maximum de 6: 18
+- Prime partie mineure : 0 (total 62 < 63)
+- Brelan: 9
+- Carré: 16
+- Full: 25
+- Petite Suite: 30
+- Grande Suite: 40
+- Yahtzee: 0
+- Prime Yahtzee: -
+- Chance: 18
+
+Score final : 200
+
+Lors de cette partie, le joueur a décidé de marqué 0 dans Yahtzee, en fin de partie, car aucune autre combinaison n’était possible. Ne pouvant tenter d’obtenir un second Yahtzee, il n’aura, au final, lancé que 13 combinaisons au cours de cette partie.
