@@ -9,9 +9,15 @@ A chaque round, chaque joueur lance les dés à leur tour. Le but est de réalis
 
 ## Déscription du problème
 
-Le kata consiste à créer l’ensemble des règles de calcul qui, pour un joueur donné et à partir d’une combinaison de dés et d’une figure, restituera le score associé.
+Le kata consiste, dans un premier temps,  à créer l’ensemble des règles de calcul qui, pour un joueur donné et à partir d’une combinaison de dés et d’une figure, restituera le score associé.
 
-Au début de la partie, le programme demandera le nombre de joueur. A chaque tour, il demandera, joueur par joueur, la combinaison et la figure désirée. A la fin de la partie il donnera un classement de chaque joueur avec le score et désignera le vainqueur.
+Dans un second temps, on pourra aller plus loin en relisant le jeu complet :
+
+Au début de la partie, le programme demandera le nombre de joueur.
+
+A chaque tour, il demandera, joueur par joueur, la combinaison de dés. En fonction de celle-ci et des combinaisons déjà associées à un score, il proposera un ensemble de figures possibles et demandera au joueur d’en sélectionner une.
+
+A la fin de la partie il donnera un classement de chaque joueur avec le score et désignera le vainqueur.
 
 ## Règles du jeu :
 
