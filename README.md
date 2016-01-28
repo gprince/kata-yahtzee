@@ -36,14 +36,14 @@ Quand les figures de la partie mineure sont entièrement réalisées, le joueur 
 
 _La partie majeure regroupe les figures suivantes_ :
 
-- **Brelan** : les joueurs doivent obtenir 3 dés de même valeur. Ils marquent 3 fois la valeur des dés identiques ;
-- **Carré** : les joueurs doivent obtenir 4 dés de même valeur. Ils marquent 4 fois la valeur des dés identiques ;
-- **Full** : les joueurs doivent obtenir 3 dés de même valeur et 2 dés d’une autre valeur - (brelan + paire). Ils marquent 25 points ;
-- **Petite Suite** : les joueurs doivent obtenir 4 dés qui se suivent (1-2-3-4, 2-3-4-5, 3-4-5-6). Ils marquent 30 points ;
-- **Grande Suite** : les joueurs doivent obtenir 5 dés qui se suivent (1-2-3-4-5 / 2-3-4-5-6). Ils marquent 40 points ;
-- **Yahtzee** : les joueurs doivent obtenir 5 dés de même valeur. Ils marquent 50 points. 2 Yahtzee sont autorisés au cours d’une partie ;
+- **Brelan       ** : les joueurs doivent obtenir 3 dés de même valeur. Ils marquent 3 fois la valeur des dés identiques ;
+- **Carré        ** : les joueurs doivent obtenir 4 dés de même valeur. Ils marquent 4 fois la valeur des dés identiques ;
+- **Full         ** : les joueurs doivent obtenir 3 dés de même valeur et 2 dés d’une autre valeur - (brelan + paire). Ils marquent 25 points ;
+- **Petite Suite ** : les joueurs doivent obtenir 4 dés qui se suivent (1-2-3-4, 2-3-4-5, 3-4-5-6). Ils marquent 30 points ;
+- **Grande Suite ** : les joueurs doivent obtenir 5 dés qui se suivent (1-2-3-4-5 / 2-3-4-5-6). Ils marquent 40 points ;
+- **Yahtzee      ** : les joueurs doivent obtenir 5 dés de même valeur. Ils marquent 50 points. 2 Yahtzee sont autorisés au cours d’une partie ;
 - **Prime Yahtzee** : Les joueurs peuvent obtenir 2 Yahtzee au cours d’une partie à condition d’avoir déjà obtenu un premier Yahtzee. Ils marquent 50 points supplémentaires ;
-- **Chance** : les joueurs doivent obtenir le plus grand nombre de points. Ils marquent la somme de la valeur des dés ;
+- **Chance       ** : les joueurs doivent obtenir le plus grand nombre de points. Ils marquent la somme de la valeur des dés ;
 
 A la fin de la partie, ont totalise les points de la partie mineure, du bonus associé et de la partie majeure.
 

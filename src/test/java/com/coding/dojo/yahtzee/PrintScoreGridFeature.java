@@ -1,6 +1,5 @@
 package com.coding.dojo.yahtzee;
 
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,7 +8,7 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.mockito.Mockito.verify;
+import static com.coding.dojo.yahtzee.Figures.*;
 
 /**
  * <h1></h1>
@@ -17,7 +16,8 @@ import static org.mockito.Mockito.verify;
 @RunWith(MockitoJUnitRunner.class)
 public class PrintScoreGridFeature {
 
-    @Mock Console console;
+    @Mock
+    Console console;
 
     private Game game;
 
@@ -30,19 +30,19 @@ public class PrintScoreGridFeature {
     public void print_score_containing_the_complete_grid_with_total() {
 
         // given
-        game.newRoll("1, 1, 1, 2, 4", 1);
-        game.newRoll("2, 2, 2, 2, 5", 2);
-        game.newRoll("3, 3, 1, 2, 4", 3);
-        game.newRoll("4, 4, 4, 2, 5", 4);
-        game.newRoll("5, 5, 5, 2, 4", 5);
-        game.newRoll("6, 6, 6, 2, 4", 6);
-        game.newRoll("3, 3, 3, 2, 4", 7);
-        game.newRoll("4, 4, 4, 4, 1", 8);
-        game.newRoll("1, 1, 1, 2, 2", 9);
-        game.newRoll("1, 2, 3, 4, 1", 10);
-        game.newRoll("1, 2, 3, 4, 5", 11);
-        game.newRoll("1, 5, 6, 1, 1", 12);
-        game.newRoll("4, 3, 2, 4, 5", 14);
+        game.newRoll("1, 1, 1, 2, 4", MAXIMUM_DE_1);
+        game.newRoll("2, 2, 2, 2, 5", MAXIMUM_DE_2);
+        game.newRoll("3, 3, 1, 2, 4", MAXIMUM_DE_3);
+        game.newRoll("4, 4, 4, 2, 5", MAXIMUM_DE_4);
+        game.newRoll("5, 5, 5, 2, 4", MAXIMUM_DE_5);
+        game.newRoll("6, 6, 6, 2, 4", MAXIMUM_DE_6);
+        game.newRoll("3, 3, 3, 2, 4", BRELAN);
+        game.newRoll("4, 4, 4, 4, 1", CARREE);
+        game.newRoll("1, 1, 1, 2, 2", FULL);
+        game.newRoll("1, 2, 3, 4, 1", PETITE_SUITE);
+        game.newRoll("1, 2, 3, 4, 5", GRANDE_SUITE);
+        game.newRoll("1, 5, 6, 1, 1", YAHTZEE);
+        game.newRoll("4, 3, 2, 4, 5", CHANCE);
 
         // when
         game.printScore();
@@ -76,5 +76,4 @@ public class PrintScoreGridFeature {
         inOrder.verify(console).print("Score final   | 200 |");
         inOrder.verify(console).print("---------------------");
     }
-
 }
